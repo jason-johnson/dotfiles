@@ -14,6 +14,10 @@ zshrc() {
     echo "-----------------------------------------------------------"
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     echo "==========================================================="
+    echo "             cloning spaceship                             "
+    echo "-----------------------------------------------------------"
+    git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt
+    echo "==========================================================="
     echo "             import zshrc                                  "
     echo "-----------------------------------------------------------"
     cat .zshrc > $HOME/.zshrc
