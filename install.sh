@@ -17,6 +17,7 @@ zshrc() {
     echo "             cloning spaceship                             "
     echo "-----------------------------------------------------------"
     git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt
+    ln -s ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
     echo "==========================================================="
     echo "             import zshrc                                  "
     echo "-----------------------------------------------------------"
